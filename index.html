@@ -7,13 +7,50 @@
 
     <style>
 
-    .jumbotron-icon {
+    body {
+      background-color: #3066BE;
+      color: #FFF;
+    }
+
+    .logo {
       font-size: 5em;
       color: #FFF;
-      background-color: #58D3F7;
+      background-color: #3066BE;
       padding: 25px;
       border-radius: 100%;
-      box-shadow: 0px 2px 5px 2px #CCC;
+      box-shadow: inset 1px 2px 10px 1px #000;
+    }
+
+    .featured-product {
+      width: 200px;
+      height: 200px;
+      margin: 15px auto;
+      display: block;
+    }
+
+    .divider {
+      display: block;
+      width: 50px;
+      border: 3px solid #FFF;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .navbar {
+      margin-bottom: 0px;
+    }
+
+    .welcome-section {
+      background-color: #6D9DC5;
+      padding: 75px 0px;
+      box-shadow: 1px 1px 10px 3px #000;
+    }
+
+
+    #why-we-do-it {
+      margin-bottom: 50px;
     }
 
     </style>
@@ -31,7 +68,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">TGAG</a>
+          <a class="navbar-brand" href="#">Top Gun Glasses</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -57,20 +94,79 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="container">
-
-      <div class="jumbotron text-center">
-        <i class="glyphicon glyphicon-sunglasses jumbotron-icon hidden-xs"></i>
-        <h1>Top Gun Asshole Glasses</h1>
-        <p>Your <strong>#1</strong> source for glasses for assholes</p>
+    <section class="welcome-section">
+      <div class="container text-center">
+        <i class="glyphicon glyphicon-sunglasses logo hidden-xs"></i>
+        <h1>Top Gun Glasses</h1>
+        <p>Your <strong>#1</strong> source for Top Guns!</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Buy Now!</a></p>
       </div>
+    </section>
 
-    </div>
 
+    <section id="why-we-do-it">
+      <div class="container">
+        <h1 class="text-center">Why We Do It?</h1>
+
+        <span class="divider"></span>
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.youtube.com/embed/58QOBqAWNzE" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1 class="text-center">Featured Products</h1>
+        <span class="divider"></span>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                <h3><i class="glyphicon glyphicon-plane"></i> Fighter Glasses</h3>
+                <img src="http://placehold.it/200x200" class="featured-product" />
+                <button class="btn btn-success">Add To Cart</button>
+                <button class="btn btn-primary">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                <h3><i class="glyphicon glyphicon-heart-empty"></i> Lover Glasses</h3>
+                <img src="http://placehold.it/200x200" class="featured-product" />
+                <button class="btn btn-success">Add To Cart</button>
+                <button class="btn btn-primary">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                <h3><i class="glyphicon glyphicon-fire"></i> Crazy Glasses</h3>
+                <img src="http://placehold.it/200x200" class="featured-product" />
+                <button class="btn btn-success">Add To Cart</button>
+                <button class="btn btn-primary">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+
+
+
+    </footer>
+
+    <!-- load in some scripts -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   </body>
 </html>
